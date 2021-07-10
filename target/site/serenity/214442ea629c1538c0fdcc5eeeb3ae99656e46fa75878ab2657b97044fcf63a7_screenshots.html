@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">MSBReportingTestAutomation</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="72689a4ccc38fdd637c6f22c3ce5c93f84c6e5c2ae482d4b7c0ead175cacebdd.html">Practice Form</a></span>
+                > <span class="truncate-60"><a
+                    href="214442ea629c1538c0fdcc5eeeb3ae99656e46fa75878ab2657b97044fcf63a7.html">Fill out a practice form </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-07-2021 23:23</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Practice Form </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a web user<br />
+I want to practice filling out a form<br />
+to practice the automation
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="095fb70a5155b4b01be72b93f1b4c51cab27094796115f0e543dc2649da60779.html">Smoketest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Fill out a practice form
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="6c49c961607cdb142ede8a76881c5d2b27169c3e411eba7a741b02ab54777a2b.png" title=" Given that a web user wants to practice automating the filling of a registration form in demoqa" width="1857"/>
+                <img src="6c49c961607cdb142ede8a76881c5d2b27169c3e411eba7a741b02ab54777a2b.png" title=" webuser opens the https://demoqa.com/automation-practice-form" width="1857"/>
+                <img src="6c49c961607cdb142ede8a76881c5d2b27169c3e411eba7a741b02ab54777a2b.png" title=" Given that a web user wants to practice automating the filling of a registration form in demoqa (completed)" width="1857"/>
+                <img src="25131fe53232b1ade44fa22e1248ccb78cd1505ee7dfc1894f89ec40185b69a6.png" title=" When he fills in the fields of a practice form" width="1857"/>
+                <img src="25131fe53232b1ade44fa22e1248ccb78cd1505ee7dfc1894f89ec40185b69a6.png" title=" Webuser fill the fields" width="1857"/>
+                <img src="25131fe53232b1ade44fa22e1248ccb78cd1505ee7dfc1894f89ec40185b69a6.png" title=" webuser enters 'Sharda' into " width="1857"/>
+                <img src="bdcec4af02bad816d0d3a262c0efe1f1b1b620b296bdad70cb8e24c56f049a1c.png" title=" webuser enters 'Zulauf' into " width="1857"/>
+                <img src="0d4f24154e255a4eeca84bd7e9627395387c48131c8da6faff5fb8a151d3c43f.png" title=" webuser enters 'sommer.carroll@hotmail.com' into " width="1857"/>
+                <img src="b8a57cb0ab1d623b35d507f8c0127e60e2c589505d954044293d5a1fdc7807e7.png" title=" webuser clicks on " width="1857"/>
+                <img src="b1c79dbc5fecff19a44782600ea5a906426107f8ced447bc6e86f346af2c6210.png" title=" webuser enters '1405981344' into " width="1857"/>
+                <img src="dc0b0290c08efcd256b714f80978f000107d267c6ccc35020e32a13e28cdd28d.png" title=" webuser enters 'A' into " width="1857"/>
+                <img src="5656a9dc6906773f5e413fce34a6323f630d6d66d4509783d975a47aecab0232.png" title=" webuser enters '12-15-1998' into " width="1857"/>
+                <img src="15573cbb9d61251e293b5db1b82dbb57bbf14d4056d586d70affb9fab26cfa4c.png" title=" webuser enters ENTER into " width="1857"/>
+                <img src="b7ecc0e7734b776ce87d202af12bd0dba777bf3ac6f392c93adb3f6d8ab91657.png" title=" webuser enters 'Maths' into " width="1857"/>
+                <img src="7cc95c3cd993c091c8a5de04f2f0cb85683a90532790d0af51c789538f432b65.png" title=" webuser enters ENTER into " width="1857"/>
+                <img src="3e5cd4f045965b07b34e26314592a468bf3e0fd82882f038e9e4708082120de1.png" title=" webuser clicks on " width="1857"/>
+                <img src="019f3daed478715b0a190d0430c5bc24af8eba52abd01b6c061f5f3acecb4cd7.png" title=" webuser enters 'C:\Users\kamis\OneDrive\Escritorio\PruebaAutomatizacion\Resources\ejercicio13-2.png' into " width="1857"/>
+                <img src="2688f0857e355691900b09be2a509c6dfcf407d58a3d0e3311d4ec8813c0857d.png" title=" webuser enters '9428 Jeffrey Knolls, West Armando, ME 24890-6549' into " width="1857"/>
+                <img src="e8aa46cbaad3e59411f6876b0edb00e6b0812d1228c8ca96ee8f17f041d66caa.png" title=" webuser clicks on " width="1857"/>
+                <img src="6addfbbd534238272e8465cdea7631b4224449fe34f7930471393072db5c9bef.png" title=" webuser enters ARROW_DOWN into " width="1857"/>
+                <img src="d390500c0995dc98a0ac253e791f735e6b5d885af6cc0e9c7651f6b06f087234.png" title=" webuser enters ENTER into " width="1857"/>
+                <img src="6ece9b1375fd97756e7281d2ddb8c06d07ca9b421024877536ce59b674af1cac.png" title=" webuser clicks on " width="1857"/>
+                <img src="3602a92c7701396207e3be0ef25daf6ed8ae63b6631ef78a943ac26ff6b86e31.png" title=" webuser enters ARROW_DOWN into " width="1857"/>
+                <img src="6206dc7c63cdc9fa148d2e7e337ba86de4962a2b9a58b24f5261fdc20a8801f1.png" title=" webuser enters ENTER into " width="1857"/>
+                <img src="f4e76d8c2d2151e15ab753a320ec3ddf1895b502842e486b0101a76558a2bd7d.png" title=" webuser clicks on " width="1857"/>
+                <img src="1713902c51e5fbb181df217aba9f54faaecb042033251c8c2a994c81bce97e54.png" title=" Webuser fill the fields (completed)" width="1857"/>
+                <img src="1713902c51e5fbb181df217aba9f54faaecb042033251c8c2a994c81bce97e54.png" title=" When he fills in the fields of a practice form (completed)" width="1857"/>
+                <img src="1713902c51e5fbb181df217aba9f54faaecb042033251c8c2a994c81bce97e54.png" title=" Then he should see his data in a pop-up window: <span class='success-color'>SUCCESS</span>" width="1857"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.80</span>
+</div>
+</body>
+</html>
