@@ -1,9 +1,11 @@
 package com.demoqa.test.stepDefinitions;
 
 import com.demoqa.automation.interactions.OpenBrowser;
+import com.demoqa.automation.models.DataInjection;
 import com.demoqa.automation.task.FillTheFields;
 import com.demoqa.automation.task.FillTheFieldsWhitExcel;
 import com.demoqa.automation.userinterface.PracticeFormWebpage;
+
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -15,10 +17,14 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static net.serenitybdd.core.Serenity.takeScreenshot;
+import java.io.IOException;
+
+import static com.demoqa.automation.utils.MakeScreenshot.makeScreenshot;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class StepDefinition {
+
+    DataInjection di = new DataInjection();
 
     @Managed
     private WebDriver driver;
@@ -37,8 +43,9 @@ public class StepDefinition {
     }
 
     @When("^he fills in the fields of a practice form$")
-    public void heFillsInTheFieldsOfAPracticeForm() {
+    public void heFillsInTheFieldsOfAPracticeForm() throws IOException {
         theActorInTheSpotlight().attemptsTo(FillTheFields.successful());
+        makeScreenshot(driver, di.getMakeScreenshotFaker());
     }
 
     @Then("^he should see his data in a pop-up window$")
@@ -47,7 +54,8 @@ public class StepDefinition {
     }
 
     @When("^he fills in the fields of a practice form with data in an Excel sheet$")
-    public void heFillsInTheFieldsOfAPracticeFormWithDataInAnExcelSheet() {
+    public void heFillsInTheFieldsOfAPracticeFormWithDataInAnExcelSheet() throws IOException {
         theActorInTheSpotlight().attemptsTo(FillTheFieldsWhitExcel.injectionSheet());
+        makeScreenshot(driver, di.getMakeScreenshotExcel());
     }
 }
