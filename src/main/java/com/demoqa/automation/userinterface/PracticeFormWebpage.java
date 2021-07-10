@@ -19,7 +19,7 @@ public class PracticeFormWebpage {
     public static final Target CURRENT_ADDRESS_INPUT = Target.the("").located(By.id("currentAddress"));
     public  static final  Target STATE = Target.the("").located(By.id("react-select-3-input"));
     public  static final  Target CITY = Target.the("").located(By.id("react-select-4-input"));
-
+    public static final Target PUBLICITY_HIDDEN_BUTTON = Target.the("").located(By.xpath("//img[@src='https://ad.plus/adplus-advertising.svg']"));
     public static final Target SUBMIT_BUTTON = Target.the("").located(By.id("submit"));
 
     public static final Target BOX_VALIDATION = Target.the("").located(By.className("modal-content"));

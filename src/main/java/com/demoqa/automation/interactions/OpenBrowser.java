@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Open;
 
+
 public class OpenBrowser implements Interaction {
 
     private String URL;
@@ -20,3 +21,6 @@ public class OpenBrowser implements Interaction {
         return new OpenBrowser(URL);
     }
 }
+
+
+

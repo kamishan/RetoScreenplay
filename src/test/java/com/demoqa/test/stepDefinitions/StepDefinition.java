@@ -1,6 +1,7 @@
 package com.demoqa.test.stepDefinitions;
 
 import com.demoqa.automation.interactions.OpenBrowser;
+import com.demoqa.automation.interactions.HiddenPublicity;
 import com.demoqa.automation.models.DataInjection;
 import com.demoqa.automation.task.FillTheFields;
 import com.demoqa.automation.task.FillTheFieldsWhitExcel;
@@ -40,7 +41,7 @@ public class StepDefinition {
     @Given("^that a web user wants to practice automating the filling of a registration form in demoqa$")
     public void thatAWebUserWantsToPracticeAutomatingTheFillingOfARegistrationFormInDemoqa() {
             theActorInTheSpotlight().attemptsTo(OpenBrowser.on(PracticeFormWebpage.URL));
-            //driver.manage().window().maximize();
+            theActorInTheSpotlight().attemptsTo(HiddenPublicity.close());
     }
 
     @When("^he fills in the fields of a practice form$")

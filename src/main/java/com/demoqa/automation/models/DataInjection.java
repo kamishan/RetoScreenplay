@@ -15,10 +15,6 @@ public class DataInjection {
         return firstName;
     }
 
-    public String getExtensionName() {
-        return extensionName;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -37,14 +33,6 @@ public class DataInjection {
 
     public String getBirthday() {
         return birthday;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public String getExtensionEmail() {
-        return extensionEmail;
     }
 
     public String getMakeScreenshotFaker() {
@@ -71,10 +59,6 @@ public class DataInjection {
         return sheetName;
     }
 
-    public String getExtensionCurrentAddress() {
-        return extensionCurrentAddress;
-    }
-
     public String getPicturepath() {
         return picturepath;
     }
@@ -94,7 +78,6 @@ public class DataInjection {
         this.extensionCurrentAddress = "Current Address :";
         this.filepath = "Resources/data.xlsx";
         this.sheetName = "data01";
-        //this.picturepath = "/home/zamekh/Programas/Intellij/PruebaAutomatizacion/Resources/ejercicio13-2.png";
         this.picturepath = "C:\\Users\\kamis\\OneDrive\\Escritorio\\PruebaAutomatizacion\\Resources\\ejercicio13-2.png";
         this.makeScreenshotFaker = "C:\\Users\\kamis\\OneDrive\\Escritorio\\PruebaAutomatizacion\\Resources\\PruebaTestFaker.png";
         this.makeScreenshotExcel = "C:\\Users\\kamis\\OneDrive\\Escritorio\\PruebaAutomatizacion\\Resources\\PruebaTestExcel.png";
