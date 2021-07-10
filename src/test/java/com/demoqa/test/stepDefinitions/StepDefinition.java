@@ -4,6 +4,7 @@ import com.demoqa.automation.interactions.OpenBrowser;
 import com.demoqa.automation.models.DataInjection;
 import com.demoqa.automation.task.FillTheFields;
 import com.demoqa.automation.task.FillTheFieldsWhitExcel;
+import com.demoqa.automation.task.FillTheFieldsWithProperties;
 import com.demoqa.automation.userinterface.PracticeFormWebpage;
 
 
@@ -57,5 +58,11 @@ public class StepDefinition {
     public void heFillsInTheFieldsOfAPracticeFormWithDataInAnExcelSheet() throws IOException {
         theActorInTheSpotlight().attemptsTo(FillTheFieldsWhitExcel.injectionSheet());
         makeScreenshot(driver, di.getMakeScreenshotExcel());
+    }
+
+    @When("^he fills in the fields of a practice form with data in an properties file$")
+    public void heFillsInTheFieldsOfAPracticeFormWithDataInAnPropertiesFile() throws IOException {
+       theActorInTheSpotlight().attemptsTo(FillTheFieldsWithProperties.fileProperties());
+        makeScreenshot(driver, di.getMakeScreenshotProperties());
     }
 }

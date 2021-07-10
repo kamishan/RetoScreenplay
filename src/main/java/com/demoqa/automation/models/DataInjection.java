@@ -9,7 +9,7 @@ public class DataInjection {
     Faker faker = new Faker(new Locale("en-US"));
 
     private String firstName, email, lastName, mobileNumber,currentAddress,birthday,subjects,
-            state,extensionName, extensionEmail, extensionCurrentAddress, filepath, sheetName,picturepath, makeScreenshotFaker, makeScreenshotExcel;
+            state,extensionName, extensionEmail, extensionCurrentAddress, filepath, sheetName,picturepath, makeScreenshotFaker, makeScreenshotExcel, makeScreenshotProperties;
 
     public String getFirstName() {
         return firstName;
@@ -55,6 +55,10 @@ public class DataInjection {
         return makeScreenshotExcel;
     }
 
+    public String getMakeScreenshotProperties() {
+        return makeScreenshotProperties;
+    }
+
     public String getSubjects() {
         return subjects;
     }
@@ -94,6 +98,7 @@ public class DataInjection {
         this.picturepath = "C:\\Users\\kamis\\OneDrive\\Escritorio\\PruebaAutomatizacion\\Resources\\ejercicio13-2.png";
         this.makeScreenshotFaker = "C:\\Users\\kamis\\OneDrive\\Escritorio\\PruebaAutomatizacion\\Resources\\PruebaTestFaker.png";
         this.makeScreenshotExcel = "C:\\Users\\kamis\\OneDrive\\Escritorio\\PruebaAutomatizacion\\Resources\\PruebaTestExcel.png";
+        this.makeScreenshotProperties = "C:\\Users\\kamis\\OneDrive\\Escritorio\\PruebaAutomatizacion\\Resources\\PruebaTestProperties.png";
     }
 
 
